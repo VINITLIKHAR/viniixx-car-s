@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#69D2E7">
+  <title>Vehicles | Vinixx Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/admin.css">
+</head>
+<body>
+  <div class="sidebar-backdrop js-sidebar-backdrop"></div>
+  <div class="app-shell">
+    <aside class="sidebar js-sidebar" aria-label="Admin navigation">
+      <div class="brand"><div class="brand-logo-wrap"><img src="assets/img/logo.png" alt="Vinixx" class="brand-logo"></div></div>
+      <div class="brand-divider"></div>
+      <div class="sidebar-scroll">
+        <div class="nav-group"><div class="nav-label">Overview</div>
+          <a class="nav-link" href="dashboard.html"><div class="nav-icon"><svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg></div><div class="nav-copy"><strong>Dashboard</strong><span>Summary &amp; insights</span></div></a>
+        </div>
+        <div class="nav-group"><div class="nav-label">Operations</div>
+          <a class="nav-link" href="bookings.html"><div class="nav-icon"><svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div><div class="nav-copy"><strong>Bookings</strong><span>Track reservations</span></div></a>
+          <a class="nav-link active" href="vehicles.html"><div class="nav-icon"><svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 17H3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h13l4 5v5h-2"/><circle cx="7.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg></div><div class="nav-copy"><strong>Vehicles</strong><span>Fleet &amp; pricing</span></div></a>
+          <div class="nav-dropdown">
+            <button class="nav-link nav-dropdown-trigger js-nav-dropdown-trigger" type="button"><div class="nav-icon"><svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div><div class="nav-copy"><strong>Payments</strong><span>Requests &amp; bank details</span></div></button>
+            <div class="nav-submenu">
+              <a class="nav-sublink" href="payment-settings.html">Bank Details</a>
+              <a class="nav-sublink" href="payments.html">Payment Requests</a>
+            </div>
+          </div>
+          <a class="nav-link" href="documents.html"><div class="nav-icon"><svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div><div class="nav-copy"><strong>Documents</strong><span>Review uploads</span></div></a>
+          <a class="nav-link" href="customers.html"><div class="nav-icon"><svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><div class="nav-copy"><strong>Customers</strong><span>Profiles &amp; history</span></div></a>
+        </div>
+      </div>
+    </aside>
+    <main class="main">
+      <div class="topbar">
+        <div class="topbar-left">
+          <button class="menu-toggle js-menu-toggle" type="button" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+          <div class="topbar-copy"><h1>Vehicles</h1><p>Welcome back, Vinixx</p></div>
+        </div>
+        <div class="topbar-right">
+          <div class="profile-dropdown js-profile-dropdown">
+            <button class="profile-trigger js-profile-trigger" type="button" aria-expanded="false">
+              <div class="profile-avatar">VX</div>
+              <div class="profile-meta"><strong>Vinixx</strong><span>Administrator</span></div><span class="profile-caret">▾</span>
+            </button>
+            <div class="dropdown-panel">
+              <div class="dropdown-user"><div class="profile-meta"><strong>Vinixx</strong><span>admin@vinixx.com</span></div></div>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-link logout" href="login.html"><span>Logout</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-hero"><div><div class="eyebrow">Admin Panel</div><h2 class="page-title">Vehicles</h2><div class="page-subtitle">Manage your fleet, bookings, documents and daily rental operations from one clean workspace.</div></div></div>
+<section class="section-card"><div class="card-head"><div><h3>Fleet</h3><p>Manage vehicles and pricing.</p></div><button class="btn" type="button" data-modal="m-vehicle">+ Add Vehicle</button></div><div class="toolbar"><input type="search" class="js-search" placeholder="Search vehicle or reg. no…"><select class="js-filter"><option value="">All status</option><option value="available">Available</option><option value="booked">Booked</option><option value="service">Service</option></select></div><div class="table-wrap"><table class="js-table"><thead><tr><th>Image</th><th>Vehicle</th><th>Reg. No.</th><th>Type</th><th>Fuel</th><th>Seats</th><th>6 Hrs</th><th>24 Hrs</th><th>₹/KM</th><th>Status</th><th>Action</th></tr></thead><tbody>
+<tr data-status="available"><td><img class="thumb" src="assets/vehicles/swift.webp" alt="Maruti Swift Dzire"></td><td>Maruti Swift Dzire</td><td>GJ-01-AB-1234</td><td>Sedan</td><td>Petrol</td><td>5</td><td>₹1,200</td><td>₹2,800</td><td>₹11</td><td><span class="badge badge-available">available</span></td><td><button class="btn-secondary" data-modal="m-vehicle">Edit</button> <button class="btn-danger" data-action="delete">Delete</button></td></tr>
+<tr data-status="booked"><td><img class="thumb" src="assets/vehicles/ertiga.webp" alt="Maruti Ertiga"></td><td>Maruti Ertiga</td><td>GJ-01-CD-5678</td><td>MUV</td><td>CNG</td><td>7</td><td>₹1,600</td><td>₹3,600</td><td>₹13</td><td><span class="badge badge-confirmed">booked</span></td><td><button class="btn-secondary" data-modal="m-vehicle">Edit</button> <button class="btn-danger" data-action="delete">Delete</button></td></tr>
+<tr data-status="available"><td><img class="thumb" src="assets/vehicles/innova.webp" alt="Toyota Innova"></td><td>Toyota Innova</td><td>GJ-01-EF-9012</td><td>MUV</td><td>Diesel</td><td>7</td><td>₹2,200</td><td>₹4,800</td><td>₹16</td><td><span class="badge badge-available">available</span></td><td><button class="btn-secondary" data-modal="m-vehicle">Edit</button> <button class="btn-danger" data-action="delete">Delete</button></td></tr>
+<tr data-status="available"><td><img class="thumb" src="assets/vehicles/crysta.webp" alt="Innova Crysta"></td><td>Innova Crysta</td><td>GJ-27-GH-3456</td><td>SUV</td><td>Diesel</td><td>7</td><td>₹2,800</td><td>₹5,900</td><td>₹19</td><td><span class="badge badge-available">available</span></td><td><button class="btn-secondary" data-modal="m-vehicle">Edit</button> <button class="btn-danger" data-action="delete">Delete</button></td></tr>
+<tr data-status="available"><td><img class="thumb" src="assets/vehicles/swift.webp" alt="Swift Dzire Tour"></td><td>Swift Dzire Tour</td><td>GJ-01-JK-7788</td><td>Sedan</td><td>CNG</td><td>5</td><td>₹1,100</td><td>₹2,600</td><td>₹10</td><td><span class="badge badge-available">available</span></td><td><button class="btn-secondary" data-modal="m-vehicle">Edit</button> <button class="btn-danger" data-action="delete">Delete</button></td></tr>
+<tr data-status="service"><td><img class="thumb" src="assets/vehicles/ertiga.webp" alt="Ertiga ZXi"></td><td>Ertiga ZXi</td><td>GJ-18-LM-4321</td><td>MUV</td><td>Petrol</td><td>7</td><td>₹1,700</td><td>₹3,700</td><td>₹14</td><td><span class="badge badge-cancelled">service</span></td><td><button class="btn-secondary" data-modal="m-vehicle">Edit</button> <button class="btn-danger" data-action="delete">Delete</button></td></tr>
+<tr data-status="booked"><td><img class="thumb" src="assets/vehicles/innova.webp" alt="Toyota Innova 8-Seater"></td><td>Toyota Innova 8-Seater</td><td>GJ-01-NP-2468</td><td>MUV</td><td>Diesel</td><td>8</td><td>₹2,300</td><td>₹4,900</td><td>₹17</td><td><span class="badge badge-confirmed">booked</span></td><td><button class="btn-secondary" data-modal="m-vehicle">Edit</button> <button class="btn-danger" data-action="delete">Delete</button></td></tr>
+<tr data-status="available"><td><img class="thumb" src="assets/vehicles/crysta.webp" alt="Crysta GX Premium"></td><td>Crysta GX Premium</td><td>GJ-05-QR-1357</td><td>SUV</td><td>Diesel</td><td>7</td><td>₹3,000</td><td>₹6,200</td><td>₹20</td><td><span class="badge badge-available">available</span></td><td><button class="btn-secondary" data-modal="m-vehicle">Edit</button> <button class="btn-danger" data-action="delete">Delete</button></td></tr>
+<tr class="js-empty" hidden><td colspan="11">No records found.</td></tr></tbody></table></div></section>
+    </main>
+  </div>
+  <div class="modal" id="m-vehicle"><div class="box"><h3 style="margin-bottom:14px">Vehicle</h3><div class="form-grid"><div><label>Vehicle name</label><input type="text" placeholder="Vehicle name"></div><div><label>Registration no.</label><input type="text" placeholder="Registration no."></div><div><label>Type</label><input type="text" placeholder="Type"></div><div><label>Fuel</label><input type="text" placeholder="Fuel"></div><div><label>Seats</label><input type="number" placeholder="Seats"></div><div><label>6 hr price</label><input type="number" placeholder="6 hr price"></div><div><label>24 hr price</label><input type="number" placeholder="24 hr price"></div><div><label>Rate per KM</label><input type="number" placeholder="Rate per KM"></div></div>
+    <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap"><button class="btn" type="button" data-toast="Saved (demo)" data-close>Save</button><button class="btn-secondary" type="button" data-close>Cancel</button></div></div></div>
+  <script src="assets/js/admin.js"></script>
+</body>
+</html>

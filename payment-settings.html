@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#69D2E7">
+  <title>Payment Settings | Vinixx Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/admin.css">
+</head>
+<body>
+  <div class="sidebar-backdrop js-sidebar-backdrop"></div>
+  <div class="app-shell">
+    <aside class="sidebar js-sidebar" aria-label="Admin navigation">
+      <div class="brand"><div class="brand-logo-wrap"><img src="assets/img/logo.png" alt="Vinixx" class="brand-logo"></div></div>
+      <div class="brand-divider"></div>
+      <div class="sidebar-scroll">
+        <div class="nav-group"><div class="nav-label">Overview</div>
+          <a class="nav-link" href="dashboard.html"><div class="nav-icon"><svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg></div><div class="nav-copy"><strong>Dashboard</strong><span>Summary &amp; insights</span></div></a>
+        </div>
+        <div class="nav-group"><div class="nav-label">Operations</div>
+          <a class="nav-link" href="bookings.html"><div class="nav-icon"><svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div><div class="nav-copy"><strong>Bookings</strong><span>Track reservations</span></div></a>
+          <a class="nav-link" href="vehicles.html"><div class="nav-icon"><svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 17H3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h13l4 5v5h-2"/><circle cx="7.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg></div><div class="nav-copy"><strong>Vehicles</strong><span>Fleet &amp; pricing</span></div></a>
+          <div class="nav-dropdown open">
+            <button class="nav-link nav-dropdown-trigger js-nav-dropdown-trigger active" type="button"><div class="nav-icon"><svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div><div class="nav-copy"><strong>Payments</strong><span>Requests &amp; bank details</span></div></button>
+            <div class="nav-submenu">
+              <a class="nav-sublink active" href="payment-settings.html">Bank Details</a>
+              <a class="nav-sublink" href="payments.html">Payment Requests</a>
+            </div>
+          </div>
+          <a class="nav-link" href="documents.html"><div class="nav-icon"><svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div><div class="nav-copy"><strong>Documents</strong><span>Review uploads</span></div></a>
+          <a class="nav-link" href="customers.html"><div class="nav-icon"><svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><div class="nav-copy"><strong>Customers</strong><span>Profiles &amp; history</span></div></a>
+        </div>
+      </div>
+    </aside>
+    <main class="main">
+      <div class="topbar">
+        <div class="topbar-left">
+          <button class="menu-toggle js-menu-toggle" type="button" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+          <div class="topbar-copy"><h1>Payment Settings</h1><p>Welcome back, Vinixx</p></div>
+        </div>
+        <div class="topbar-right">
+          <div class="profile-dropdown js-profile-dropdown">
+            <button class="profile-trigger js-profile-trigger" type="button" aria-expanded="false">
+              <div class="profile-avatar">VX</div>
+              <div class="profile-meta"><strong>Vinixx</strong><span>Administrator</span></div><span class="profile-caret">▾</span>
+            </button>
+            <div class="dropdown-panel">
+              <div class="dropdown-user"><div class="profile-meta"><strong>Vinixx</strong><span>admin@vinixx.com</span></div></div>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-link logout" href="login.html"><span>Logout</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-hero"><div><div class="eyebrow">Admin Panel</div><h2 class="page-title">Payment Settings</h2><div class="page-subtitle">Manage your fleet, bookings, documents and daily rental operations from one clean workspace.</div></div></div>
+<section class="section-card"><div class="card-head"><div><h3>Bank Details</h3><p>Shown to customers on the payment step.</p></div></div><div class="form-grid"><div><label>Account Holder</label><input value="Vinixx"></div><div><label>Bank</label><input value="HDFC Bank"></div><div><label>Account No.</label><input value="50200012345678"></div><div><label>IFSC</label><input value="HDFC0001234"></div><div><label>UPI ID</label><input value="vinixx@hdfcbank"></div></div><button class="btn" type="button" style="margin-top:14px" data-toast="Settings saved (demo)">Save Settings</button></section>
+    </main>
+  </div>
+
+  <script src="assets/js/admin.js"></script>
+</body>
+</html>

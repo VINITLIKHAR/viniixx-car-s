@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#69D2E7">
+  <title>Bookings | Vinixx Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/admin.css">
+</head>
+
+<body>
+  <div class="sidebar-backdrop js-sidebar-backdrop"></div>
+  <div class="app-shell">
+    <aside class="sidebar js-sidebar" aria-label="Admin navigation">
+      <div class="brand">
+        <div class="brand-logo-wrap"><img src="assets/img/logo.png" alt="Vinixx" class="brand-logo"></div>
+      </div>
+      <div class="brand-divider"></div>
+      <div class="sidebar-scroll">
+        <div class="nav-group">
+          <div class="nav-label">Overview</div>
+          <a class="nav-link" href="dashboard.html">
+            <div class="nav-icon"><svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2">
+                <rect x="3" y="3" width="7" height="7" rx="1" />
+                <rect x="14" y="3" width="7" height="7" rx="1" />
+                <rect x="14" y="14" width="7" height="7" rx="1" />
+                <rect x="3" y="14" width="7" height="7" rx="1" />
+              </svg></div>
+            <div class="nav-copy"><strong>Dashboard</strong><span>Summary &amp; insights</span></div>
+          </a>
+        </div>
+        <div class="nav-group">
+          <div class="nav-label">Operations</div>
+          <a class="nav-link active" href="bookings.html">
+            <div class="nav-icon"><svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" />
+                <path d="M16 2v4M8 2v4M3 10h18" />
+              </svg></div>
+            <div class="nav-copy"><strong>Bookings</strong><span>Track reservations</span></div>
+          </a>
+          <a class="nav-link" href="vehicles.html">
+            <div class="nav-icon"><svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2">
+                <path d="M5 17H3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h13l4 5v5h-2" />
+                <circle cx="7.5" cy="17.5" r="2.5" />
+                <circle cx="17.5" cy="17.5" r="2.5" />
+              </svg></div>
+            <div class="nav-copy"><strong>Vehicles</strong><span>Fleet &amp; pricing</span></div>
+          </a>
+          <div class="nav-dropdown">
+            <button class="nav-link nav-dropdown-trigger js-nav-dropdown-trigger" type="button">
+              <div class="nav-icon"><svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  stroke-width="2">
+                  <rect x="2" y="5" width="20" height="14" rx="2" />
+                  <path d="M2 10h20" />
+                </svg></div>
+              <div class="nav-copy"><strong>Payments</strong><span>Requests &amp; bank details</span></div>
+            </button>
+            <div class="nav-submenu">
+              <a class="nav-sublink" href="payment-settings.html">Bank Details</a>
+              <a class="nav-sublink" href="payments.html">Payment Requests</a>
+            </div>
+          </div>
+          <a class="nav-link" href="documents.html">
+            <div class="nav-icon"><svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                <polyline points="14 2 14 8 20 8" />
+              </svg></div>
+            <div class="nav-copy"><strong>Documents</strong><span>Review uploads</span></div>
+          </a>
+          <a class="nav-link" href="customers.html">
+            <div class="nav-icon"><svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg></div>
+            <div class="nav-copy"><strong>Customers</strong><span>Profiles &amp; history</span></div>
+          </a>
+        </div>
+      </div>
+    </aside>
+    <main class="main">
+      <div class="topbar">
+        <div class="topbar-left">
+          <button class="menu-toggle js-menu-toggle" type="button"
+            aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+          <div class="topbar-copy">
+            <h1>Bookings</h1>
+            <p>Welcome back, Vinixx</p>
+          </div>
+        </div>
+        <div class="topbar-right">
+          <div class="profile-dropdown js-profile-dropdown">
+            <button class="profile-trigger js-profile-trigger" type="button" aria-expanded="false">
+              <div class="profile-avatar">VX</div>
+              <div class="profile-meta"><strong>Vinixx</strong><span>Administrator</span></div><span
+                class="profile-caret">▾</span>
+            </button>
+            <div class="dropdown-panel">
+              <div class="dropdown-user">
+                <div class="profile-meta"><strong>Vinixx</strong><span>admin@vinixx.com</span></div>
+              </div>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-link logout" href="login.html"><span>Logout</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-hero">
+        <div>
+          <div class="eyebrow">Admin Panel</div>
+          <h2 class="page-title">Bookings</h2>
+          <div class="page-subtitle">Manage your fleet, bookings, documents and daily rental operations from one clean
+            workspace.</div>
+        </div>
+      </div>
+      <section class="section-card">
+        <div class="card-head">
+          <div>
+            <h3>All Bookings</h3>
+            <p>Search, filter and manage reservations.</p>
+          </div><button class="btn" type="button" data-modal="m-booking">+ New Booking</button>
+        </div>
+        <div class="toolbar"><input type="search" class="js-search"
+            placeholder="Search booking, customer or car…"><select class="js-filter">
+            <option value="">All status</option>
+            <option value="pending">Pending</option>
+            <option value="confirmed">Confirmed</option>
+            <option value="completed">Completed</option>
+            <option value="cancelled">Cancelled</option>
+          </select></div>
+        <div class="table-wrap">
+          <table class="js-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Customer</th>
+                <th>Car</th>
+                <th>Trip</th>
+                <th>Dates</th>
+                <th>Type</th>
+                <th>Amount</th>
+                <th>Status</th>
+                <th>Payment</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr data-status="confirmed">
+                <td>VNX-1042</td>
+                <td>Rahul Patel</td>
+                <td>Toyota Innova</td>
+                <td>Ahmedabad Airport → Udaipur</td>
+                <td>06 Oct 2026 – 08 Oct 2026</td>
+                <td>KM</td>
+                <td>₹14,200</td>
+                <td><span class="badge badge-confirmed js-status">confirmed</span></td>
+                <td><span class="badge badge-confirmed">Advance paid</span></td>
+                <td><button class="btn-secondary" data-action="confirm">Confirm</button> <button class="btn-danger"
+                    data-action="delete">Delete</button></td>
+              </tr>
+              <tr data-status="pending">
+                <td>VNX-1041</td>
+                <td>Priya Shah</td>
+                <td>Maruti Swift Dzire</td>
+                <td>Satellite → Gandhinagar</td>
+                <td>05 Oct 2026</td>
+                <td>6 Hrs</td>
+                <td>₹1,200</td>
+                <td><span class="badge badge-pending js-status">pending</span></td>
+                <td><span class="badge badge-pending">Pending</span></td>
+                <td><button class="btn-secondary" data-action="confirm">Confirm</button> <button class="btn-danger"
+                    data-action="delete">Delete</button></td>
+              </tr>
+              <tr data-status="confirmed">
+                <td>VNX-1040</td>
+                <td>Amit Desai</td>
+                <td>Toyota Innova 8-Seater</td>
+                <td>Navrangpura → Dwarka</td>
+                <td>04 Oct 2026 – 07 Oct 2026</td>
+                <td>KM</td>
+                <td>₹22,800</td>
+                <td><span class="badge badge-confirmed js-status">confirmed</span></td>
+                <td><span class="badge badge-approved">Paid</span></td>
+                <td><button class="btn-secondary" data-action="confirm">Confirm</button> <button class="btn-danger"
+                    data-action="delete">Delete</button></td>
+              </tr>
+              <tr data-status="confirmed">
+                <td>VNX-1039</td>
+                <td>Karan Joshi</td>
+                <td>Maruti Ertiga</td>
+                <td>Maninagar → Mount Abu</td>
+                <td>03 Oct 2026 – 09 Oct 2026</td>
+                <td>24 Hrs</td>
+                <td>₹21,600</td>
+                <td><span class="badge badge-confirmed js-status">confirmed</span></td>
+                <td><span class="badge badge-confirmed">Advance paid</span></td>
+                <td><button class="btn-secondary" data-action="confirm">Confirm</button> <button class="btn-danger"
+                    data-action="delete">Delete</button></td>
+              </tr>
+              <tr data-status="completed">
+                <td>VNX-1038</td>
+                <td>Rahul Patel</td>
+                <td>Innova Crysta</td>
+                <td>Bopal → Statue of Unity</td>
+                <td>28 Sep 2026 – 29 Sep 2026</td>
+                <td>12 Hrs</td>
+                <td>₹4,200</td>
+                <td><span class="badge badge-completed js-status">completed</span></td>
+                <td><span class="badge badge-approved">Paid</span></td>
+                <td><button class="btn-secondary" data-action="confirm">Confirm</button> <button class="btn-danger"
+                    data-action="delete">Delete</button></td>
+              </tr>
+              <tr data-status="cancelled">
+                <td>VNX-1037</td>
+                <td>Neha Mehta</td>
+                <td>Swift Dzire Tour</td>
+                <td>Vastrapur → Surat</td>
+                <td>25 Sep 2026</td>
+                <td>12 Hrs</td>
+                <td>₹1,750</td>
+                <td><span class="badge badge-cancelled js-status">cancelled</span></td>
+                <td><span class="badge badge-confirmed">Refunded</span></td>
+                <td><button class="btn-secondary" data-action="confirm">Confirm</button> <button class="btn-danger"
+                    data-action="delete">Delete</button></td>
+              </tr>
+              <tr data-status="completed">
+                <td>VNX-1036</td>
+                <td>Amit Desai</td>
+                <td>Crysta GX Premium</td>
+                <td>Airport → Rajkot</td>
+                <td>20 Sep 2026 – 21 Sep 2026</td>
+                <td>KM</td>
+                <td>₹9,800</td>
+                <td><span class="badge badge-completed js-status">completed</span></td>
+                <td><span class="badge badge-approved">Paid</span></td>
+                <td><button class="btn-secondary" data-action="confirm">Confirm</button> <button class="btn-danger"
+                    data-action="delete">Delete</button></td>
+              </tr>
+              <tr data-status="pending">
+                <td>VNX-1035</td>
+                <td>Vikram Rana</td>
+                <td>Maruti Swift Dzire</td>
+                <td>Thaltej → Vadodara</td>
+                <td>10 Oct 2026</td>
+                <td>6 Hrs</td>
+                <td>₹1,200</td>
+                <td><span class="badge badge-pending js-status">pending</span></td>
+                <td><span class="badge badge-pending">Pending</span></td>
+                <td><button class="btn-secondary" data-action="confirm">Confirm</button> <button class="btn-danger"
+                    data-action="delete">Delete</button></td>
+              </tr>
+              <tr class="js-empty" hidden>
+                <td colspan="10">No records found.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+  <div class="modal" id="m-booking">
+    <div class="box">
+      <h3 style="margin-bottom:14px">New Booking</h3>
+      <div class="form-grid">
+        <div><label>Customer name</label><input type="text" placeholder="Customer name"></div>
+        <div><label>Mobile</label><input type="tel" placeholder="Mobile"></div>
+        <div><label>Pickup location</label><input type="text" placeholder="Pickup location"></div>
+        <div><label>Drop location</label><input type="text" placeholder="Drop location"></div>
+        <div><label>Pickup date</label><input type="date" placeholder="Pickup date"></div>
+        <div><label>Return date</label><input type="date" placeholder="Return date"></div>
+      </div>
+      <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap"><button class="btn" type="button"
+          data-toast="Saved (demo)" data-close>Save</button><button class="btn-secondary" type="button"
+          data-close>Cancel</button></div>
+    </div>
+  </div>
+  <script src="assets/js/admin.js"></script>
+</body>
+
+</html>
